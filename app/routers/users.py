@@ -9,7 +9,7 @@ from app.models.user import User, User_Pydantic, UserIn_Pydantic
 tags = ["users"]
 router = APIRouter()
 
-
+# router中是pydantic的model，给路由参数用，提示前端需要提供的参数
 class UserIn(BaseModel):
     username: str
     email: str
